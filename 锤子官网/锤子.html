@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<meta name="description" content="锤子商城是一家制造移动互联网终端设备的公司,公司致力于打造用户体验一流的数码消费类产品（智能手机为主）,主打坚果手机系列有坚果R1手机,坚果3手机等>
+    <meta name="keywords" content="坚果手机,坚果R1手机,坚果3手机,坚果Pro手机,坚果手机官网" />
+	<meta charset="UTF-8">
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+	<link rel="stylesheet"  href="css/reset.css">
+	<link rel="stylesheet"  href="css/font.css">
+	<link rel="stylesheet"  href="css/common.css">
+	<link rel="stylesheet"  href="css/index.css">
+	<title>【锤子商城】坚果手机 - 坚果R1手机 - 坚果3手机</title>
+</head>
+<body>
+	<div class="top">
+		<div class="logo">
+			<a  href="javascript:;">
+				<img src="images/logo.png" alt="">
+			</a>
+		</div>
+		<div class="top-nav">
+			<ul class="nav-list">
+				<li class="nav-list-item"><a href="javascript:;">在线商城</a></li>
+				<li class="nav-list-item"><a href="javascript:;">坚果 Pro 2S</a></li>
+				<li class="nav-list-item"><a href="javascript:;">坚果 R1</a></li>
+				<li class="nav-list-item"><a href="javascript:;">坚果 TNT 工作站</a></li>
+				<li class="nav-list-item"><a href="javascript:;">Smartisan OS</a></li>
+				<li class="nav-list-item"><a href="javascript:;">欢喜云</a></li>
+				<li class="nav-list-item"><a href="javascript:;">应用</a></li>
+				<li class="nav-list-item"><a href="javascript:;">论坛</a></li>
+				<li class="nav-list-item"><a href="javascript:;">荣誉与奖项</a></li>
+			</ul>
+		</div>
+		<div class="user-info">
+			<ul>
+				<li class="info-list-item">
+					<a href="javascript:;" >个人中心</a>
+				</li>
+				<li class="info-list-item">
+					<a href="javascript:;">购物车</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="nav" id="nav">
+		<div class="container">
+			
+		</div>
+	</div>
+	<div class="header">
+		<div class="container">
+			
+		</div>
+	</div>
+	<div class="home">
+		<div class="container">
+			
+		</div>
+	</div>
+	<div class="main">
+		<div class="container">
+			
+		</div>
+	</div>
+	<div class="footer">
+		<div class="container">
+			
+		</div>
+	</div>
+</body>
+<script>
+	window.onscroll=function(){
+		var topScroll = get_scrollTop_of_body();//滚动的距离,距离顶部的距离
+		var oNav = document.getElementById("nav");//获取到导航栏id
+		if(topScroll > 45){ //当滚动距离大于119px时执行下面的东西
+			oNav.style.position = 'fixed';
+			oNav.style.top = '0';
+			oNav.style.zIndex = '9999';
+		}else{//当滚动距离小于119的时候执行下面的内容，也就是让导航栏恢复原状
+			oNav.style.position = 'static';
+		}
+	}
+		/*解决浏览器兼容问题*/
+	function get_scrollTop_of_body(){ 
+		var scrollTop; 
+		if(typeof window.pageYOffset != 'undefined'){//pageYOffset指的是滚动条顶部到网页顶部的距离 
+			scrollTop = window.pageYOffset; 
+		}else if(typeof document.compatMode != 'undefined' && document.compatMode != 'BackCompat')        { 
+			scrollTop = document.documentElement.scrollTop; 
+		}else if(typeof document.body != 'undefined'){
+			scrollTop = document.body.scrollTop; 
+		} 
+		return scrollTop; 
+	} 
+</script>
+</html>

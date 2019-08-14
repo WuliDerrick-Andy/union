@@ -1,0 +1,41 @@
+li{
+	list-style: none;
+}
+.container{
+	height: 100%;
+	width: 1220px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.clearfix:after{
+	visibility: hidden;
+	display: block;
+	content: '';
+	clear: both;
+}
+.clearfix{
+	*zoom:1;
+}
+a{
+	font-size: 12px;
+	color: #5079d9;
+	cursor: pointer;
+	transition: color 1.5s ease-out;
+	text-decoration: none;
+}
+a:hover{
+	color: #fff;
+}
+.col1{
+	width: 234px;
+	float: left;
+}
+.col2{
+	width: 978px;
+	float: right;
+}
+.sep{
+	color:#393d42;
+	margin-left: 4px;
+	margin-right: 4px;
+}

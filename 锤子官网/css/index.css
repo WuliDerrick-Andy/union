@@ -1,0 +1,70 @@
+﻿/*第一部分*/
+	.top{
+			height: 45px;
+			background-color: #222325;
+			}
+		.logo{
+			width: 18px;
+			height: 18px;
+			float: left;
+			margin-left: 21px;
+			/*margin-right: 570px;*/
+			margin-top: 13px;
+		}
+		.logo img{
+			width: 18px;
+			height: 18px;
+			text-align: center;
+		}
+		.top-nav{
+			float: left;
+			height: 45px;
+			width: 1220px;
+			margin-left: 300px;
+			padding-left: 235px;
+		}
+		.top-nav .nav-list{
+			height: 45px;
+		}
+		.nav-list .nav-list-item{
+			float: left;
+			margin-right: 40px;
+			line-height: 45px;
+			text-align: center;
+		}
+		.nav-list .nav-list-item a{
+			color: #c2c3c4;
+			transition: all 0.15s ease-out;
+		}
+		.nav-list .nav-list-item a:hover{
+			color: #fff;
+		}
+		.user-info{
+			float: right;
+		}
+/*第二部分*/
+	.nav{
+			height: 74px;
+			width: 100%;
+			background-color: yellow;
+			}
+/*第三部分*/
+	.header{
+			height: 1040px;
+			background-color: tomato;
+			}
+/*第四部分*/
+	.home{
+			height: 3351px;
+			background-color: pink;
+			}
+/*第五部分*/
+	.main{
+			height: 420px;
+			background-color: green;
+			}
+/*第六部分*/
+	.footer{
+			height: 354px;
+			background-color: skyblue;
+			}
