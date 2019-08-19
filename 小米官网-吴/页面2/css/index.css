@@ -658,3 +658,69 @@
 		background-color: #ff6700;
 		color: #fff;
 	}
+	.end{
+	/*height: 162spx;
+	background-color: skyblue;*/
+	padding: 30px 0;
+	background: #fafafa;
+	}
+	.end .end-top .logo{
+		float: left;
+		width: 60px;
+		height: 60px;
+		background-color: #ff6700;
+		background-image: url(../images/logo.png);
+		background-repeat: no-repeat;
+		background-position: center center;
+	}
+	.end .end-top .site{
+		float: left;
+		padding-left: 10px;
+		width: 1166px;
+		height: 80px;
+		text-align: left;
+		box-sizing: border-box;
+	}
+	.end .end-top .site .site-links a{
+		font-size: 12px;
+		color: #757575;
+	}
+	.end .end-top .site .site-links .sep{
+		margin-right: 0px;
+		color: #b0b0b0;
+		height: 18px;
+		line-height: 18px;
+	}
+	.end .end-top .site .site-links a:hover{
+		color: #ff6700;
+	}
+	.end .end-top .site .site-content{
+		float: left;
+		font-size:12px; 
+		margin-bottom:4px;
+		color:#b0b0b0;
+	}
+	.end .end-top .site .site-content a:hover{
+		color: #ff6700;
+	}
+	.end .end-top .company{
+		float: left;
+		margin-top: 10px;
+		padding-left: 70px;
+
+	}
+	.end .end-top .company img{
+		width: auto;
+		height: 28px;
+		margin-left: 0;
+		margin-bottom: 15px;
+		}
+	.end .end-bottom{
+		width: 267px;
+		height: 19px;
+		margin-right: auto;
+		margin-left: auto;
+		margin-top: 30px;
+		background-image: url(../images/slogan.png);
+		background-repeat: no-repeat;
+	}
