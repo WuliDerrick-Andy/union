@@ -507,7 +507,7 @@
 			margin-left: 10px;
 			border: 2px solid #a3adb6;
 		}
-		.home .banner .carousel .carousel-btns li:hover{
+		.home .banner .carousel .carousel-btns li:hover,.home .banner .carousel .carousel-btns .chick{
 			background-color: #e3f4fe;
 			border-color: #889298;
 		}
