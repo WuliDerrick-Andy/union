@@ -1,4 +1,42 @@
 /*公共样式*/
+	.loader{
+		position: relative;
+		width: 4px;
+		height: 20px;
+		background-color: #ff6700;
+		margin:0px auto;
+		animation: loading 0.5s linear 0s infinite alternate;
+	}
+	.loader:before,
+	.loader:after{
+		position: absolute;
+		top: 0;
+		left: 0px;
+		content: '';
+		width: 4px;
+		height: 20px;
+		background-color: #ff6700;
+	}
+	.loader:before{
+		margin-left: -10px;
+		transform: scale(1,0.5);
+		animation: loading 0.5s linear 0.5s infinite alternate;
+	}
+	.loader:after{
+		margin-left: 10px;
+		transform: scale(1,0.3);
+		animation: loading 0.5s linear 0.3s infinite alternate;
+	}
+	@keyframes loading{
+		from{
+			opacity: 0.5;
+			transform: scale(1,0.5);
+		}
+		to{
+			opacity: 1;
+			transform: scale(1,1);
+		}
+	}
 	.hd{
 		height: 60px;
 		line-height: 60px;
@@ -256,6 +294,7 @@
 			height: 40px;
 		}
 		.top .cart{
+			position: relative;
 			float: right;
 			width: 120px;
 			height: 40px;
@@ -265,22 +304,42 @@
 			text-align: center;
 		}
 		.top .cart:hover{
-		background-color: #fff;
+			background-color: #fff;
 		}
 		.top .cart:hover a{
-		color: #ff6700;
+			color: #ff6700;
 		}
 		.top .cart i{
-		font-size: 20px;
+			font-size: 20px;
 		}
 		.top .cart span{
-		display: inline-block;
-		vertical-align: 3px;
+			display: inline-block;
+			vertical-align: 3px;
+		}
+		.top .cart .cart-content{
+			position: absolute;
+			top: 40px;
+			right: 0px;
+			z-index: 999;
+			width: 300px;
+			height: 0px;
+			background-color: #fff;
+			box-shadow: 0px 2px 2px rgba(0,0,0,0.3);
+			overflow: hidden;
+		}
+		.top .cart .cart-content span{
+			display: none;
+			margin-top: 35px;
+			font-size: 12px;
+		}
+		.top .cart .cart-content .loader{
+			display: none;
+			margin-top: 35px;
 		}
 		.user-info .info-list-item{
-		float: left;
-		text-align: center;
-		line-height: 40px;
+			float: left;
+			text-align: center;
+			line-height: 40px;
 		}
 		.box{
 			transition: box-shadow 0.4s,transform 0.4s;
@@ -316,6 +375,44 @@
 		}
 		.header .header-nav .header-nav-item a:hover{
 			color:#ff6700;	
+		}
+		.header .header-nav-content{
+		position: absolute;
+		top: 140px;
+		width: 100%;
+		height: 0;
+		background-color: #fff;
+		z-index: 999;
+		/*border-top: 1px solid #ccc;*/
+		overflow: hidden;
+		}
+		.header .header-nav-content li{
+			float: left;
+			width: 200px;
+			text-align: center;
+		}
+		.header .header-nav-content li .img-box{
+			margin-top: 30px;
+			width: 100%;
+			height: 100px;
+			border-right: 1px solid #ccc;
+		}
+		.header .header-nav-content li .img-box img{
+			width: 100px;
+			height: 100px;
+		}
+		.header .header-nav-content li .product-name{
+			margin-top: 10px;
+			font-size: 12px;
+			color:#757575;
+		}
+		.header .header-nav-content li .product-price{
+			margin-top: 5px;
+			font-size: 12px;
+			color:#ff6700;
+		}
+		.header  .loader{
+			margin-top: 85px;
 		}
 		.header .search{
 			float: right;
@@ -486,7 +583,30 @@
 		width: 100%;
 		position: absolute;
 		top: 0px;
+		transition: all 1s;
 	}
+	.use-nav .carousel-btns{
+		position: absolute;
+		bottom: 25px;
+		right: 50%;
+		margin-right: -20px;
+		z-index: 999;
+	}
+	.use-nav .carousel-btns li{
+		float: left;
+		width: 10px;
+		height: 10px;
+		box-sizing: border-box;
+		border-radius: 50%;
+		background-color: #7b8a97;
+		margin-left: 10px;
+		border: 2px solid #a3adb6;
+	}
+	.use-nav .carousel-btns li:hover,
+	.use-nav .carousel-btns li.active{
+			background-color: #e3f4fe;
+			border-color: #889298;
+		}
 	.main .use-list h2{
 		display: block;
 		font-size: 30px;
@@ -513,6 +633,9 @@
 	.use-list .service ul .service-list a{
 		display: block;
     	height: 100%;
+	}
+	.use-list .service .zizhu .service-list:hover h3,.use-list .service .zizhu .service-list:hover span{
+		color: #ff6700;
 	}
 	.use-list .service .zizhu .service-list img{
 	    margin-top: 76px;
@@ -546,6 +669,9 @@
 	    color: #666;
 	    font-size: 16px;
 	    line-height: 28px;
+	}
+	.use-list .service .jishu .service-list:hover span{
+		color: #ff6700;
 	}
 	.use-list .left{
 		float: left;
@@ -588,6 +714,10 @@
 		display: block;
 	    margin: 38px auto;
 	    font-size: 16px;
+	    transition:color 0.4s;
+	}
+	.use-list .right .btn:hover{
+		color: #ff6700;
 	}
 	.use-list .search-wrap{
 	    position: relative;
